@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Product from './components/shopping-process/Product';
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
           Learn React
         </a>
       </header>
-      <Product />
     </div>
   );
 }
