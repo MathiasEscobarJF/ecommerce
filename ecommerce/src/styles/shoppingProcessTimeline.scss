@@ -1,3 +1,5 @@
+@use 'styleGuide';
+
 .timeline-container{
     position: relative;
     ol{
@@ -5,9 +7,10 @@
         justify-content: space-between;
     }
     li{
+        font: styleGuide.$font-sm;
         list-style: none;
         border: 1px solid #000;
-        border-radius: 30px;
+        border-radius: styleGuide.$borderRadius-bg;
         background-color: #fff;
         display: flex;
         align-items: center;
@@ -24,6 +27,19 @@
     position: absolute;
     top: calc(50% - 0.5em);
     z-index: -10;
-    background-color: #d3d3d3;
-    border-radius: 30px;
+    background-color: styleGuide.$color-primary-extra-light;
+    border-radius: styleGuide.$borderRadius-bg;
 }
+
+.timeline-container li.actived{
+    background-color: styleGuide.$color-primary-dark;
+    border-color: styleGuide.$color-primary-dark;
+    color: #fff;
+}
+
+.timeline-container li.disabled{
+    background-color: #fff;
+    border-color: styleGuide.$color-primary-dark;
+    color: styleGuide.$color-primary-dark;
+}
+
