@@ -9,13 +9,32 @@ function PaymentForm({data,handleChange}){
             <fieldset>
                 <legend>Pago</legend>
                 <div>
-                    <Input realName='Número de tarjeta' inputType='number' inputName='cardNumber' inputValue={data.cardNumber} onChange={handleChange} />
+                    <Input 
+                        realName='Número de tarjeta' 
+                        inputType='number' 
+                        inputName='cardNumber' inputValue={data.cardNumber} onChange={handleChange} 
+                        required={true}
+                    />
                 </div>
                 <div>
-                    <Input realName='Nombre como aparece en la tarjeta' inputType='text' inputName='cardName' inputValue={data.cardName} onChange={handleChange} />
+                    <Input 
+                        realName='Nombre como aparece en la tarjeta' 
+                        inputType='text' 
+                        inputName='cardName' 
+                        inputValue={data.cardName} 
+                        onChange={handleChange} 
+                        required={true}
+                    />
                 </div>
                 <div>
-                    <Input realName='Fecha de expiración MM/YY' inputType='text' inputName='cardExpiration' inputValue={data.cardExpiration} onChange={handleChange} />
+                    <Input 
+                        realName='Fecha de expiración MM/YY' 
+                        inputType='text' 
+                        inputName='cardExpiration' 
+                        inputValue={data.cardExpiration} 
+                        onChange={handleChange} 
+                        required={true}
+                    />
                 </div>
                 <div>
                     <label>
@@ -39,7 +58,14 @@ function PaymentForm({data,handleChange}){
                     <fieldset>
                         <legend>Dirección de facturación</legend>
                         <div>
-                            <Input realName='Nombre completo' inputType='text' inputName='fullname' inputValue={data.fullname} onChange={handleChange} />
+                            <Input 
+                                realName='Nombre completo' 
+                                inputType='text' 
+                                inputName='fullname' 
+                                inputValue={data.fullname} 
+                                onChange={handleChange} 
+                                required={true}
+                            />
                         </div>
                         <div>
                             <label>
@@ -59,16 +85,44 @@ function PaymentForm({data,handleChange}){
                             </label>
                         </div>
                         <div>
-                            <Input realName='Ciudad' inputType='text' inputName='city' inputValue={data.city} onChange={handleChange} />
+                            <Input 
+                                realName='Ciudad' 
+                                inputType='text' 
+                                inputName='city' 
+                                inputValue={data.city} 
+                                onChange={handleChange} 
+                                required={true}
+                            />
                         </div>
                         <div>
-                            <Input realName='Código postal' inputType='number' inputName='zipCode' inputValue={data.zipCode} onChange={handleChange} />
+                            <Input 
+                                realName='Código postal' 
+                                inputType='number' 
+                                inputName='zipCode' 
+                                inputValue={data.zipCode} 
+                                onChange={handleChange} 
+                                required={true}
+                            />
                         </div>
                         <div>
-                            <Input realName='Calle/Avenida/... y Número' inputType='text' inputName='streetAndNumber' inputValue={data.streetAndNumber} onChange={handleChange} />
+                            <Input 
+                                realName='Calle/Avenida/... y Número' 
+                                inputType='text' 
+                                inputName='streetAndNumber' 
+                                inputValue={data.streetAndNumber} 
+                                onChange={handleChange} 
+                                required={true}
+                            />
                         </div>
                         <div>
-                            <Input realName='Piso, apartamento, escalera, etc' inputType='text' inputName='housingType' inputValue={data.housingType} onChange={handleChange} />
+                            <Input 
+                                realName='Piso, apartamento, escalera, etc' 
+                                inputType='text' 
+                                inputName='housingType' 
+                                inputValue={data.housingType} 
+                                onChange={handleChange} 
+                                required={true}
+                            />
                         </div>
                     </fieldset>
                 )}

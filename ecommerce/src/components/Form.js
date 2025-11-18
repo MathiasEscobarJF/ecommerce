@@ -48,15 +48,22 @@ function Form({shippingData,handleChange}){
     return (
         <div>
             <section>
-                {step === 1 ? <DetailsForm detailsData={detailsData} handleChange={handleChangeDetails} /> : <DetailsData detailsData={detailsData}/>}
+                {step === 1 ?
+                    <DetailsForm detailsData={detailsData} handleChange={handleChangeDetails} /> :
+                    <DetailsData detailsData={detailsData}/>}
             </section>
             <section>
-                {step === 1 && <p>Método de envío</p>}
-                {step === 2 && <ShippingMethodForm shippingData={shippingData} handleChange={handleChange}/>}
-                {step === 3 && <ShippingMethodData data={shippingData}/>}
+                {step === 1 &&
+                    <p>Método de envío</p>}
+                {step === 2 &&
+                    <ShippingMethodForm shippingData={shippingData} handleChange={handleChange}/>}
+                {step === 3 &&
+                    <ShippingMethodData data={shippingData}/>}
             </section>
             <section>
-                {step === 3 ? <PaymentForm data={paymentData} handleChange={handleChangePayment} /> : <p>Pago</p>}
+                {step === 3 ?
+                    <PaymentForm data={paymentData} handleChange={handleChangePayment} /> :
+                    <p>Pago</p>}
             </section>
         </div>
     )

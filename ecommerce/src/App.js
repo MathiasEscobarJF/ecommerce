@@ -73,7 +73,7 @@ function App() {
       <StepProvider>
         <ShoppingProcessTimeline />
         <Form shippingData={shippingData} handleChange={handleChangeShipping} />
-        <OrderSummary products={products} shipping={shipping} />
+        <OrderSummary products={products} shipping={shipping.find(s => s.id === shippingData)} />
       </StepProvider>
     </>
   )

@@ -10,13 +10,34 @@ function DetailsForm({detailsData,handleChange}){
             <fieldset>
                 <p>Tus detalles</p>
                 <div>
-                    <Input realName='Nombre completo' inputType='text' inputName='fullname' inputValue={detailsData.fullname} onChange={handleChange} />
+                    <Input 
+                        realName='Nombre completo' 
+                        inputType='text' 
+                        inputName='fullname' 
+                        inputValue={detailsData.fullname} 
+                        onChange={handleChange} 
+                        required={true}
+                    />
                 </div>
                 <div>
-                    <Input realName='Correo electrónico' inputType='email' inputName='email' inputValue={detailsData.email} onChange={handleChange} />
+                    <Input 
+                        realName='Correo electrónico' 
+                        inputType='email' 
+                        inputName='email' 
+                        inputValue={detailsData.email} 
+                        onChange={handleChange} 
+                        required={true}
+                    />
                 </div>
                 <div>
-                    <Input realName='Número de teléfono' inputType='number' inputName='telephone' inputValue={detailsData.telephone} onChange={handleChange} />
+                    <Input 
+                        realName='Número de teléfono' 
+                        inputType='number' 
+                        inputName='telephone' 
+                        inputValue={detailsData.telephone} 
+                        onChange={handleChange} 
+                        required={true}
+                    />
                 </div>
             </fieldset>
             <fieldset>
@@ -39,16 +60,44 @@ function DetailsForm({detailsData,handleChange}){
                     </label>
                 </div>
                 <div>
-                    <Input realName='Ciudad' inputType='text' inputName='city' inputValue={detailsData.city} onChange={handleChange} />
+                    <Input 
+                        realName='Ciudad' 
+                        inputType='text' 
+                        inputName='city' 
+                        inputValue={detailsData.city} 
+                        onChange={handleChange} 
+                        required={true}
+                    />
                 </div>
                 <div>
-                    <Input realName='Código postal' inputType='number' inputName='zipCode' inputValue={detailsData.zipCode} onChange={handleChange} />
+                    <Input 
+                        realName='Código postal' 
+                        inputType='number' 
+                        inputName='zipCode' 
+                        inputValue={detailsData.zipCode} 
+                        onChange={handleChange} 
+                        required={true}
+                    />
                 </div>
                 <div>
-                    <Input realName='Calle/Avenida/... y Número' inputType='text' inputName='streetAndNumber' inputValue={detailsData.streetAndNumber} onChange={handleChange} />
+                    <Input 
+                        realName='Calle/Avenida/... y Número' 
+                        inputType='text' 
+                        inputName='streetAndNumber' 
+                        inputValue={detailsData.streetAndNumber} 
+                        onChange={handleChange} 
+                        required={true}
+                    />
                 </div>
                 <div>
-                    <Input realName='Piso, apartamento, escalera, etc' inputType='text' inputName='housingType' inputValue={detailsData.housingType} onChange={handleChange} />
+                    <Input 
+                        realName='Piso, apartamento, escalera, etc' 
+                        inputType='text' 
+                        inputName='housingType' 
+                        inputValue={detailsData.housingType} 
+                        onChange={handleChange} 
+                        required={true}
+                    />
                 </div>
             </fieldset>
             <div>
